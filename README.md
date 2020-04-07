@@ -35,9 +35,8 @@ Randomly choose a piece, and randomly move to one of the available square...
 ```
 ###### Alpha-beta search
 
-```
 Reference: https://github.com/aimacode/aima-java
-```
+
 ###### Monte-Carlo tree search
 
 ```
@@ -69,9 +68,7 @@ It also works in browser!
 ```
 ###### Recommended framework:
 
-```
 https://javalin.io
-```
 
 ## How The Swing Works?
 
@@ -89,8 +86,7 @@ Why we need multi-threading?
 Avoid user interface not responding when program is busy
 
 Reference:
-https://www.cs.bham.ac.uk/~szh/teaching/ssc/lecturenotes/Concurrency/Lecture5_Multithreaded
-Swing.pdf
+[Lecture 5 Multi-threaded Swing](https://www.cs.bham.ac.uk/~szh/teaching/ssc/lecturenotes/Concurrency/Lecture5_Multithreaded%20Swing.pdf)
 
 
 ### Why Multi-threading in Swing?
