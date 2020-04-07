@@ -95,9 +95,13 @@ Swing.pdf
 
 ### Why Multi-threading in Swing?
 
-###### Terrible UI program: Good UI program:
+###### Terrible UI programs:
 
-No response after clicking buttons Can do other things with background tasks
+No response after clicking buttons
+
+###### Good UI programs:
+
+User can perform other operations with background tasks running
 
 
 ### What’s More? (Multi-threading)
