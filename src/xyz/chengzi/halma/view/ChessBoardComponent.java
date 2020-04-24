@@ -38,7 +38,7 @@ public class ChessBoardComponent extends JComponent implements Listenable<InputL
             for (int col = 0; col < dimension; col++) {
                 gridComponents[row][col] = new SquareComponent(gridSize,
                         (row + col) % 2 == 0 ? BOARD_COLOR_1 : BOARD_COLOR_2);
-                gridComponents[row][col].setLocation(row * gridSize, col * gridSize);
+                gridComponents[row][col].setLocation(col * gridSize, row * gridSize);
                 add(gridComponents[row][col]);
             }
         }
@@ -60,7 +60,7 @@ public class ChessBoardComponent extends JComponent implements Listenable<InputL
     }
 
     private ChessBoardLocation getLocationByPosition(int x, int y) {
-        return new ChessBoardLocation(x / gridSize, y / gridSize);
+        return new ChessBoardLocation(y / gridSize, x / gridSize);
     }
 
     @Override
