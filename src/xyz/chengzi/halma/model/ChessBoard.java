@@ -28,6 +28,11 @@ public class ChessBoard implements Listenable<GameListener> {
     }
 
     public void placeInitialPieces() {
+        for (int i = 0; i < dimension; i++) {
+            for (int j = 0; j < dimension; j++) {
+                grid[i][j].setPiece(null);
+            }
+        }
         // TODO: This is only a demo implementation
         grid[0][0].setPiece(new ChessPiece(Color.RED));
         grid[0][1].setPiece(new ChessPiece(Color.RED));
@@ -78,6 +83,7 @@ public class ChessBoard implements Listenable<GameListener> {
         if (rowDistance != 0 && colDistance != 0 && Math.abs((double) rowDistance / colDistance) != 1.0) {
             return false;
         }
+        // TODO: Demo implementation
         return Math.abs(rowDistance) <= 1 && Math.abs(colDistance) <= 1;
     }
 
