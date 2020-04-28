@@ -27,6 +27,14 @@ public class GameController implements InputListener {
         model.placeInitialPieces();
     }
 
+    public ChessBoardComponent getView() {
+        return view;
+    }
+
+    public ChessBoard getModel() {
+        return model;
+    }
+
     public ChessBoardLocation getSelectedLocation() {
         return selectedLocation;
     }
