@@ -100,6 +100,8 @@ public class ChessBoardComponent extends JComponent implements Listenable<InputL
                 ChessPiece piece = board.getChessPieceAt(location);
                 if (piece != null) {
                     setChessAtGrid(location, piece.getColor());
+                } else {
+                    removeChessAtGrid(location);
                 }
             }
         }
